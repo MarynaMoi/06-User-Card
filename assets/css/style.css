@@ -1,0 +1,11 @@
+div {
+  border: 2px solid red;
+}
+
+:root {
+  --rad: 30px;
+}
+
+.container{
+    border-radius: var(--rad);
+}
