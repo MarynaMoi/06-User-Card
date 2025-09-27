@@ -1,11 +1,109 @@
-div {
-  border: 2px solid red;
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
 }
 
 :root {
   --rad: 30px;
+  --cont-width: 400px;
+  --cont-height: 600px;
 }
 
-.container{
-    border-radius: var(--rad);
+.container {
+  outline: 2px solid rgb(0, 60, 255);
+  border-radius: var(--rad);
+  background-color: white;
+  width: var(--cont-width);
+  height: var(--cont-height);
+}
+
+.location-container {
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: var(--rad);
+  border-top-right-radius: var(--rad);
+  padding: 15px;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.photo-container {
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: calc(var(--cont-height) / 3);
+  height: calc(var(--cont-height) / 3);
+  margin: auto;
+  margin-top: calc(var(--cont-height) / (-3));
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -40px;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+.user-name {
+  width: 100%;
+  height: 15%;
+  padding-top: 30px;
+  font-size: 2rem;
+}
+
+.user-info {
+  width: 100%;
+  height: 15%;
+  padding: 30px;
+  font-size: 0.8rem;
+}
+
+.follow-container {
+  width: 100%;
+  height: 15%;
+}
+
+.follow-button {
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 172px;
+  height: 48px;
+  background: #5c94b9;
+  margin-top: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(/assets/img/background.png);
+  border-bottom-left-radius: var(--rad);
+  border-bottom-right-radius: var(--rad);
+}
+
+.footer-info {
+  display: flex;
+  width: calc(100% / 3);
+  padding-top: 30px;
+  padding-left: 10px;
+  color: red;
+}
+
+.footer-ico {
+  margin-top: 4px;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 4px;
+  font-size: 0.8rem;
+}
+
+p + p {
+  color: white;
 }
